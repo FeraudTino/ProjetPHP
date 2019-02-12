@@ -1,0 +1,19 @@
+Cahier des charges :
+
+Site de streaming musical.
+
+fonctionnalités :
+- bibliothèque de titres/albums
+- lecture des titres/albums
+(- création d'une session utilisateur
+- playlist créé par utilisateur
+- "J'aime" les titres/albums
+- playlist automatique avec tous les titres "aimés")
+
+
+Travail à faire :
+- création d'une base de données (uml) (G)
+- création du code my SQL (G)
+- "corps" du site avec html5 css3 (T)
+- code php relié à la base de données (T)
+- implémentation du php sur le html (T&G)
