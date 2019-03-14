@@ -56,7 +56,13 @@ body {
 	position : absolute;
 	top : 50px;
 	left : 50px;
-    }
+	transition-duration: 0.5s;
+	}
+	
+	.logo:hover {
+		width: 55px;
+
+	}
  
 .logo2{
     width : 50px;
@@ -64,8 +70,13 @@ body {
 	position : absolute;
 	top : 30px;
     left : 110px;
-    color: white;
+	color: white;
+	transition-property: color;
+    transition-duration: 0.5s;
 }
+	.logo2:hover {
+		color: rgb(133, 133, 133);
+	}
 
 .menu {
     list-style : none;
@@ -83,7 +94,7 @@ li {
 		margin : 0 10px;
 		color : #FFF;
    }
-			
+
 .content {
     position : absolute;
 	width : 100%;
@@ -101,6 +112,23 @@ h2 {
 	line-height : 1.2em;
 	width : 100%;
 	text-align : center;
+ }
+ h3 {
+    color : #FFF;
+    margin : 0;
+	font-size : 1.7em;
+	line-height : 1.2em;
+	width : 100%;
+	text-align : center;
+ }
+
+ h4 {
+	color : #FFF;
+    margin : 0;
+	line-height : 1.2em;
+	width : 100%;
+	text-align : center;
+	padding-top: 20px;
  }
 				
 .buttons {
@@ -139,19 +167,36 @@ h2 {
     }
 					
 	.case1 {
-        background-image : url(Images/gautou.png);
-		background-size : 40px auto;
+		display: block;
+		background-color: rgb(100, 100, 100);
+        background-image : url(Images/orelsan.jpg);
+		background-size : 250px auto;
+		width: 96%;
+		height: 300px;
 		background-repeat : no-repeat;
-        background-position : 20px center;
+		background-position : 20px center;
+		padding: 40px;
+		padding-top: 20px;
+		-moz-border-radius : 5px;
+		-webkit-border-radius : 5px;
+		border-radius : 5px;
+		-webkit-box-shadow : 0px 12px 20px -10px rgba(0,0,0,0.65);
+		-moz-box-shadow : 0px 12px 20px -10px rgba(0,0,0,0.65);
+		box-shadow : 0px 12px 20px -10px rgba(0,0,0,0.65);
+		transition : box-shadow 0.5s;
     }
 					
-    .case2 {
-        background-image : url(Images/titi.png);
-		background-size : 40px auto;
+ /*   .case2 {
+		background-color: rgb(100, 100, 100);
+        background-image : url(Images/damso.jpg);
+		background-size : 80px auto;
+		width: 96%;
+		height: 100px;
     	background-repeat : no-repeat;
         background-position : 20px center;
         padding-left: 20px;
-    }
+	}
+	*/
 					
 .waves {
     width : calc(100% + 10px);
@@ -182,4 +227,21 @@ h2 {
 	-moz-transform : translate(-50%,0);
 	z-index : 1;
 }
-			
+
+table {
+	display: fixe;
+	border-collapse: collapse;
+	width: 100%;
+  }
+  
+  th, td {
+	text-align: left;
+	padding: 8px;
+  }
+  
+  tr:nth-child(even){background-color: #f2f2f2}
+  
+  th {
+	background-color: #4CAF50;
+	color: white;
+  }
