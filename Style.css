@@ -229,9 +229,9 @@ h2 {
 }
 
 table {
-	display: fixe;
 	border-collapse: collapse;
-	width: 100%;
+	width: 50%;
+	float: right;
   }
   
   th, td {
@@ -242,6 +242,6 @@ table {
   tr:nth-child(even){background-color: #f2f2f2}
   
   th {
-	background-color: #4CAF50;
+	background-color: rgb(78, 82, 78);
 	color: white;
   }
