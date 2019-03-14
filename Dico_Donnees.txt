@@ -1,6 +1,6 @@
 Classes :
-- titres (idT, nomT, #Nom_Artiste, #Nom_Artiste)
-- album (idAlb, nomAlb, #Nom_Artiste, date_parution, #nomMD)
-- artiste (idArt, nom_Dart, nomArt, prenomArt)
+- titres (idT, nomT, #nomArt, #nomAlb)
+- album (idAlb, nomAlb, dateParution, nbTitreid #nomArt, #nomMD)
+- artiste (idArt, nomArt)
 - maison de disque (idMD, nomMD)
 - utilisateur (idU)
