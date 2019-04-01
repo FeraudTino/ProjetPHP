@@ -13,31 +13,18 @@
 		<ul class="menu">
 				<a title="Accueil" href="Index.php"><li>Accueil</li></a>
 			<a title="Rechercher" href="rechercher.php"><li>Recherche</li></a>
-			<a title="Décrouvrir" href="decouvrir.php"><li>Découvrir</li></a>
+			<a title="Bibliotèque" href="Bibliotèque.php"><li>Bibliotèque</li></a>
 			<a title="Compte" href="compte.php"><li>Compte</li></a>
 		</ul><div class="titre1">
 				</div>
 		<div class="content">
 				
-			<div class="case1">
-				<h3>Tendance</h3>
-				<table>
-				<tr>
-					<th>The Antidote - StupeFlip</th>
-				</tr>
-				<tr>
-					<td><audio controls="controls"><source src="Musique/02-The Antidote.mp3" type="audio/mp3" /></audio></td>
-				</tr>
-				<tr>
-						<th>Plus Rien M'étonne - Orelsan</th>
-					</tr>
-					<tr>
-						<td><audio controls="controls"><source src="Musique/03-orelsan-plus_rien_ne_metonne.mp3" type="audio/mp3" /></audio></td>
-					</tr>
-			</table>
+			<div class="casebilio">
+				<h3>Toute nos Albums</h3>
+				
 				
 			</div>
-			<h4>Voici la meilleur bibliothèque de musique au monde réalisé par les Meilleurs Developpeurs Du Monde !</h4>
+			<h4>Vous êtes arrivé à la fin de notre bibliotèque musicale, veuillez attendre d'autre musique arriverons plutard.</h4>
 		</div>
         <a title="Acceuil" href="Index.php"><img class="logo" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/626071/line-logo.svg"></a>
         <a title="Acceuil" href="Index.php"><h1 class="logo2">Spotizer</h1> </a>
