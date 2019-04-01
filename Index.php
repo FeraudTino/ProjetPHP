@@ -11,10 +11,10 @@
 <div class="wrapper">
 	<div class="header">
 		<ul class="menu">
-				<a title="Accueil" href="Index.html"><li>Accueil</li></a>
-				<a title="Rechercher" href="rechercher.html"><li>Recherche</li></a>
-				<a title="Découvrir" href="decouvrir.html"><li>Découvrir</li></a>
-				<a title="Compte" href="compte.html"><li>Compte</li></a>
+				<a title="Accueil" href="Index.php"><li>Accueil</li></a>
+				<a title="Rechercher" href="rechercher.php"><li>Recherche</li></a>
+				<a title="Découvrir" href="decouvrir.php"><li>Découvrir</li></a>
+				<a title="Compte" href="compte.php"><li>Compte</li></a>
 		</ul><div class="titre1">
 				</div>
 		<div class="content">
@@ -42,8 +42,8 @@
 			</div>
 			<h4>Voici la meilleur bibliothèque de musique au monde réalisé par les Meilleurs Developpeurs Du Monde !</h4>
 		</div>
-        <a title="Acceuil" href="Index.html"><img class="logo" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/626071/line-logo.svg"></a>
-        <a title="Acceuil" href="Index.html"><h1 class="logo2">Spotizer</h1> </a>
+        <a title="Acceuil" href="Index.php"><img class="logo" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/626071/line-logo.svg"></a>
+        <a title="Acceuil" href="Index.php"><h1 class="logo2">Spotizer</h1> </a>
 		<img class="curve" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/626071/bottom-curve_copy.svg">
 		<img class="waves" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/626071/waves_copy.svg">
 	</div>
