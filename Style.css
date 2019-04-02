@@ -141,6 +141,15 @@ h2 {
 	text-align : center;
 	padding-top: 20px;
  }
+
+ .album {
+	color : #FFF;
+    margin : 0;
+	line-height : 1.2em;
+	width : 100%;
+	text-align : center;
+	padding-top: 20px;
+ }
 				
 .buttons {
     width : 100%;
@@ -258,6 +267,7 @@ h2 {
 }
 
 table {
+	float: left;
 	border-collapse: collapse;
 	width: 50%;
 	float: right;

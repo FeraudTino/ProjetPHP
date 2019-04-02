@@ -24,13 +24,15 @@
 				
 			<div class="casebilio">
 				<h3>Toute nos Albums</h3>
-
+<!--
 				<table>
 				<tr>
 					<td>Album</td>
 					<td>Année de sortie</td>
 					<td>Nombre de Titre</td>
 				</tr>
+
+				-->
 					<?php
 						
 
@@ -40,12 +42,13 @@
 
 						while($donnee = $requette->fetch()){
 					?>	
+					
+					<h4><?php echo $donnee['nomAlb']; ?>
+					<?php echo $donnee['dateParution']; ?>
+					<?php echo $donnee['nbTitre']; ?></h4> <br>
 
-				<tr>
-					<td><?php echo $donnee['nomAlb']; ?></td>
-					<td><?php echo $donnee['dateParution']; ?></td>
-					<td><?php echo $donnee['nbTitre']; ?></td>
-				</tr>
+
+				
 					<?php 
 						}
 
