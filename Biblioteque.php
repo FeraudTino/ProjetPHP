@@ -1,6 +1,9 @@
 <html>
     <head>
 
+			<?php 
+				include_once("function.php");
+							?>
             <title>Spotizer</title>
 			<link rel="stylesheet" type="text/css" href="Style.css" />
 			<link rel="icon" href="https://s3-us-west-2.amazonaws.com/s.cdpn.io/626071/line-logo.svg" />
@@ -13,7 +16,7 @@
 		<ul class="menu">
 				<a title="Accueil" href="Index.php"><li>Accueil</li></a>
 			<a title="Rechercher" href="rechercher.php"><li>Recherche</li></a>
-			<a title="Bibliotèque" href="Bibliotèque.php"><li>Bibliotèque</li></a>
+			<a title="Bibliotèque" href="Biblioteque.php"><li>Bibliotèque</li></a>
 			<a title="Compte" href="compte.php"><li>Compte</li></a>
 		</ul><div class="titre1">
 				</div>
@@ -21,6 +24,39 @@
 				
 			<div class="casebilio">
 				<h3>Toute nos Albums</h3>
+
+				<table>
+				<tr>
+					<td>Album</td>
+					<td>Année de sortie</td>
+					<td>Nombre de Titre</td>
+				</tr>
+					<?php
+						
+
+						$bdd = getDataBase();
+
+						$requette = $bdd->query("SELECT * FROM album");
+
+						while($donnee = $requette->fetch()){
+					?>	
+
+				<tr>
+					<td><?php echo $donnee['nomAlb']; ?></td>
+					<td><?php echo $donnee['dateParution']; ?></td>
+					<td><?php echo $donnee['nbTitre']; ?></td>
+				</tr>
+					<?php 
+						}
+
+					$requette->closeCursor();
+
+					?>
+
+				</table> <br>
+						
+						
+				
 				
 				
 			</div>
