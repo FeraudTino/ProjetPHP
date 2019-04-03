@@ -1,43 +1,66 @@
 <html>
     <head>
 
+			<?php 
+				include_once("function.php");
+							?>
             <title>Spotizer</title>
-			<link rel="stylesheet" type="text/css" href="Style.css" />
+			<link rel="stylesheet" type="text/css" href="style.css" />
 			<link rel="icon" href="https://s3-us-west-2.amazonaws.com/s.cdpn.io/626071/line-logo.svg" />
 
     </head>
 
     <body>
 <div class="wrapper">
-	<div class="header">
+	<div class="header1">
 		<ul class="menu">
 				<a title="Accueil" href="Index.php"><li>Accueil</li></a>
 			<a title="Rechercher" href="rechercher.php"><li>Recherche</li></a>
-			<a title="Décrouvrir" href="decouvrir.php"><li>Découvrir</li></a>
+			<a title="Bibliotèque" href="Biblioteque.php"><li>Bibliotèque</li></a>
 			<a title="Compte" href="compte.php"><li>Compte</li></a>
 		</ul><div class="titre1">
 				</div>
 		<div class="content">
 				
-			<div class="case1">
-				<h3>Tendance</h3>
+				<h3>Casseurs Flowteurs</h3>
+<!--
 				<table>
 				<tr>
-					<th>The Antidote - StupeFlip</th>
+					<td>Album</td>
+					<td>Année de sortie</td>
+					<td>Nombre de Titre</td>
 				</tr>
-				<tr>
-					<td><audio controls="controls"><source src="Musique/02-The Antidote.mp3" type="audio/mp3" /></audio></td>
-				</tr>
-				<tr>
-						<th>Plus Rien M'étonne - Orelsan</th>
-					</tr>
-					<tr>
-						<td><audio controls="controls"><source src="Musique/03-orelsan-plus_rien_ne_metonne.mp3" type="audio/mp3" /></audio></td>
-					</tr>
-			</table>
+
+				-->
+					<?php
+						
+
+						$bdd = getDataBase();
+
+						$requette = $bdd->query("SELECT * FROM titre");
+
+						while($donnee = $requette->fetch()){
+					?>	
+					
+					<h4><?php echo $donnee['nomTitre']; ?>
+					<?php echo $donnee['tempsTitre']; ?></h4> <br>
+
+
 				
-			</div>
-			<h4>Voici la meilleur bibliothèque de musique au monde réalisé par les Meilleurs Developpeurs Du Monde !</h4>
+					<?php 
+						}
+
+					$requette->closeCursor();
+
+					?>
+
+				</table> <br>
+						
+						
+				
+				
+				
+			
 		</div>
         <a title="Acceuil" href="Index.php"><img class="logo" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/626071/line-logo.svg"></a>
         <a title="Acceuil" href="Index.php"><h1 class="logo2">Spotizer</h1> </a>
