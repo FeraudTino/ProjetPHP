@@ -202,7 +202,6 @@ h2 {
 	.case1 {
 		display: block;
 		background-color: rgb(100, 100, 100);
-        background-image : url(Images/orelsan.jpg);
 		background-size : 250px auto;
 		width: 96%;
 		height: auto;
@@ -223,8 +222,8 @@ h2 {
 		background-color: rgb(100, 100, 100);
 		width: 96%;
 		height: 300px;
-		background-repeat : no-repeat;
 		background-position : 20px center;
+		margin-top: 25em;
 		padding: 40px;
 		padding-top: 20px;
 		-moz-border-radius : 5px;
@@ -282,7 +281,6 @@ table {
 	float: left;
 	border-collapse: collapse;
 	width: 50%;
-	float: right;
 	padding-top: 200px;
   }
   
