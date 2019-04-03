@@ -27,7 +27,7 @@
 				</div>
 		<div class="content">
 			
-				<h3>Tout nos Albums</h3>
+			
 						
                 <?php
                     $bdd = getDataBase();
@@ -37,11 +37,11 @@
                             if($bdd){
 
                                 if($id_album == 1){
-
+                                            ?><h3>Casseurs Flowteurs</h3><?php
                                     $requette = $bdd->query("SELECT * FROM titre WHERE idT>0 AND idT<=18");
 						            while($donnee = $requette->fetch()){
 					                    ?>	
-					
+                                            	
 					                    <h4><?php echo $donnee['nomTitre']; ?>
 					                    <?php echo $donnee['tempsTitre']; ?></h4> <br>
 
@@ -52,7 +52,7 @@
 					
                                  }
                                  if($id_album == 2){
-
+                                    ?><h3>Breakbot</h3><?php
                                     $requette = $bdd->query("SELECT * FROM titre WHERE idT>18 AND idT<=31");
 						            while($donnee = $requette->fetch()){
 					                    ?>	

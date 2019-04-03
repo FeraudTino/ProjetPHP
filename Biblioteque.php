@@ -20,7 +20,7 @@
 			<a title="Compte" href="compte.php"><li>Compte</li></a>
 		</ul><div class="titre1">
 				</div>
-		<div class="content">
+	
 				
 			<div class="casebilio">
 				<h3>Tout nos Albums</h3>
@@ -49,7 +49,7 @@
 				
 				
 				
-			</div>
+			
 			<h4>Vous êtes arrivé à la fin de notre bibliotèque musicale, veuillez attendre d'autre musique arriverons plutard.</h4>
 		</div>
         <a title="Acceuil" href="Index.php"><img class="logo" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/626071/line-logo.svg"></a>
