@@ -25,10 +25,7 @@
 			<a title="inscription" href="inscription.php"><li>Inscription & Connexion</li></a>
 		</ul><div class="titre1">
 				</div>
-		<div class="content">
-			
-			
-						
+		<div class="content">		
                 <?php
                     $bdd = getDataBase();
                     if(isset($_GET['id'])){
@@ -40,10 +37,17 @@
                                             ?><h3>Casseurs Flowteurs</h3><?php
                                     $requette = $bdd->query("SELECT * FROM titre WHERE idT>0 AND idT<=18");
 						            while($donnee = $requette->fetch()){
+
+                                            $chemin = $donnee['cheminMusique']
+
 					                    ?>	
-                                            	
-					                    <h4><?php echo $donnee['nomTitre']; ?>
-					                    <?php echo $donnee['tempsTitre']; ?></h4> <br>
+                                        
+				                    <h4><?php echo $donnee['nomTitre']; ?>
+					                    <?php echo $donnee['tempsTitre']; ?><audio controls="controls"><source src="<?php echo $donee['cheminMusique'] ?>" type="audio/mp3" /></h4>
+                                        
+                                        
+                                         <br>
+                                         
 
 					                    <?php 
 						            }
@@ -58,7 +62,8 @@
 					                    ?>	
 					
 					                    <h4><?php echo $donnee['nomTitre']; ?>
-					                    <?php echo $donnee['tempsTitre']; ?></h4> <br>
+					                    <?php echo $donnee['tempsTitre']; ?></h4>
+                                        <br>
 
 					                    <?php 
 						            }

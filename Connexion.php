@@ -42,7 +42,7 @@
                $_SESSION['id'] = $userinfo['id'];
                $_SESSION['pseudo'] = $userinfo['pseudo'];
                $_SESSION['mail'] = $userinfo['mail'];
-               header("Location: biblioteque.php?id=".$_SESSION['id']);
+               header("Location: bibliotheque.php?id=".$_SESSION['id']);
             } else {
                $erreur = "Mauvais mail ou mot de passe !";
             }
