@@ -2,7 +2,7 @@
     <head>
 
             <title>Spotizer</title>
-			<link rel="stylesheet" type="text/css" href="style.css" />
+			<link rel="stylesheet" type="text/css" href="CSS.css" />
 			<link rel="icon" href="https://s3-us-west-2.amazonaws.com/s.cdpn.io/626071/line-logo.svg" />
 
     </head>
@@ -13,8 +13,8 @@
 		<ul class="menu">
 				<a title="Accueil" href="Index.php"><li>Accueil</li></a>
 				<a title="Rechercher" href="rechercher.php"><li>Recherche</li></a>
-				<a title="Bibliotèque" href="Biblioteque.php"><li> Bibliotèque</li></a>
-				<a title="inscription" href="inscription.php"><li>Compte</li></a>
+				<a title="Bibliothèque" href="Bibliotheque.php"><li> Bibliothèque</li></a>
+				<a title="inscription" href="inscription.php"><li>Inscription & Connexion</li></a>
 		</ul><div class="titre1">
 				</div>
 		<div class="content">
