@@ -34,12 +34,12 @@
 						$ID = $bdd->query("SELECT nomAlb FROM album");
 						$donnee = $requette->fetchAll(PDO::FETCH_OBJ);
 						if($donnee){
-						foreach($donnee as $album){
+							foreach($donnee as $album){
 
-							?>
-							<a href="album.php?id=<?= $album->idAlb ?>"><?= $album->nomAlb ?></a><br/>
-							<?php
-						} 
+								?>
+								<a href="album.php?id=<?= $album->idAlb ?>"> <h4> <?= $album->nomAlb ?> </h4> </a><br/>
+								<?php
+							} 
 					?>	
 				<?php
 					} 
