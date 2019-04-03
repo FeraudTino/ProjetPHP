@@ -22,7 +22,7 @@
 				<a title="Accueil" href="Index.php"><li>Accueil</li></a>
 			<a title="Rechercher" href="rechercher.php"><li>Recherche</li></a>
 			<a title="Bibliotèque" href="Biblioteque.php"><li>Bibliotèque</li></a>
-			<a title="Compte" href="compte.php"><li>Compte</li></a>
+			<a title="inscription" href="inscription.php"><li>Compte</li></a>
 		</ul><div class="titre1">
 				</div>
 		<div class="content">
