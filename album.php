@@ -26,35 +26,47 @@
 		</ul><div class="titre1">
 				</div>
 		<div class="content">
-				
-			<div class="casebilio">
+			
 				<h3>Tout nos Albums</h3>
 						
                 <?php
-        $bdd = getDataBase();
-    if(isset($_GET['id'])){
-        $id_album=htmlspecialchars($_GET['id']);
-        if(is_numeric($id_album)){
-            if($bdd){
+                    $bdd = getDataBase();
+                    if(isset($_GET['id'])){
+                        $id_album=htmlspecialchars($_GET['id']);
+                        if(is_numeric($id_album)){
+                            if($bdd){
 
-                if($id_album == 1){
+                                if($id_album == 1){
 
-
-                        $requette = $bdd->query("SELECT * FROM titre WHERE idT>0 AND idT<=18");
-                
-
-						while($donnee = $requette->fetch()){
-					?>	
+                                    $requette = $bdd->query("SELECT * FROM titre WHERE idT>0 AND idT<=18");
+						            while($donnee = $requette->fetch()){
+					                    ?>	
 					
-					<h4><?php echo $donnee['nomTitre']; ?>
-					<?php echo $donnee['tempsTitre']; ?></h4> <br>
+					                    <h4><?php echo $donnee['nomTitre']; ?>
+					                    <?php echo $donnee['tempsTitre']; ?></h4> <br>
 
-					<?php 
-						}
+					                    <?php 
+						            }
 
-					$requette->closeCursor();
+					                $requette->closeCursor();
 					
-                }
+                                 }
+                                 if($id_album == 2){
+
+                                    $requette = $bdd->query("SELECT * FROM titre WHERE idT>18 AND idT<=31");
+						            while($donnee = $requette->fetch()){
+					                    ?>	
+					
+					                    <h4><?php echo $donnee['nomTitre']; ?>
+					                    <?php echo $donnee['tempsTitre']; ?></h4> <br>
+
+					                    <?php 
+						            }
+
+					                $requette->closeCursor();
+					
+                                 }
+
                 $requette = "SELECT * FROM titre WHERE idT>0 AND idT<=18";
                 $prep = $bdd->prepare($requette);
                 $prep->execute();
@@ -69,11 +81,6 @@
         }
     }
     ?>
-				
-				
-				
-			</div>
-			<h4>Vous êtes arrivé à la fin de notre bibliotèque musicale, veuillez attendre d'autre musique arriverons plutard.</h4>
 		</div>
         <a title="Acceuil" href="Index.php"><img class="logo" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/626071/line-logo.svg"></a>
         <a title="Acceuil" href="Index.php"><h1 class="logo2">Spotizer</h1> </a>
