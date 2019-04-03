@@ -5,7 +5,7 @@
 				include_once("function.php");
 							?>
             <title>Spotizer</title>
-			<link rel="stylesheet" type="text/css" href="Style.css" />
+			<link rel="stylesheet" type="text/css" href="style.css" />
 			<link rel="icon" href="https://s3-us-west-2.amazonaws.com/s.cdpn.io/626071/line-logo.svg" />
 
     </head>
@@ -23,7 +23,7 @@
 		<div class="content">
 				
 			<div class="casebilio">
-				<h3>Toute nos Albums</h3>
+				<h3>Tout nos Albums</h3>
 <!--
 				<table>
 				<tr>
@@ -37,26 +37,21 @@
 						
 
 						$bdd = getDataBase();
-
+						$ID = 0;
 						$requette = $bdd->query("SELECT * FROM album");
+						$ID = $bdd->query("SELECT nomAlb FROM album");
+						$donnee = $requette->fetchAll(PDO::FETCH_OBJ);
+						if($donnee){
+						foreach($donnee as $album){
 
-						while($donnee = $requette->fetch()){
+							?>
+							<a href="album.php?id=<?= $album->idAlb ?>"><?= $album->nomAlb ?></a><br/>
+							<?php
+						} //fin du foreach
 					?>	
-					
-					<h4><?php echo $donnee['nomAlb']; ?>
-					<?php echo $donnee['dateParution']; ?>
-					<?php echo $donnee['nbTitre']; ?></h4> <br>
-
-
-				
-					<?php 
-						}
-
-					$requette->closeCursor();
-
+				<?php
+					} //fin du if
 					?>
-
-				</table> <br>
 						
 						
 				

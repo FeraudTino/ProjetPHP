@@ -1,4 +1,8 @@
 <html>
+<?php
+    $id_album;
+
+?>
     <head>
 
 			<?php 
@@ -11,6 +15,7 @@
     </head>
 
     <body>
+
 <div class="wrapper">
 	<div class="header1">
 		<ul class="menu">
@@ -22,22 +27,21 @@
 				</div>
 		<div class="content">
 				
-				<h3>Casseurs Flowteurs</h3>
-<!--
-				<table>
-				<tr>
-					<td>Album</td>
-					<td>Année de sortie</td>
-					<td>Nombre de Titre</td>
-				</tr>
-
-				-->
-					<?php
+			<div class="casebilio">
+				<h3>Tout nos Albums</h3>
 						
+                <?php
+        $bdd = getDataBase();
+    if(isset($_GET['id'])){
+        $id_album=htmlspecialchars($_GET['id']);
+        if(is_numeric($id_album)){
+            if($bdd){
 
-						$bdd = getDataBase();
+                if($id_album == 1){
 
-						$requette = $bdd->query("SELECT * FROM titre");
+
+                        $requette = $bdd->query("SELECT * FROM titre WHERE idT>0 AND idT<=18");
+                
 
 						while($donnee = $requette->fetch()){
 					?>	
@@ -45,22 +49,31 @@
 					<h4><?php echo $donnee['nomTitre']; ?>
 					<?php echo $donnee['tempsTitre']; ?></h4> <br>
 
-
-				
 					<?php 
 						}
 
 					$requette->closeCursor();
-
-					?>
-
-				</table> <br>
-						
-						
+					
+                }
+                $requette = "SELECT * FROM titre WHERE idT>0 AND idT<=18";
+                $prep = $bdd->prepare($requette);
+                $prep->execute();
+                $album = $prep->fetch(PDO::FETCH_OBJ);
+                if(!$album){
+                    $id_album = -1;
+                }
+            }
+           ?>
+            <a></a>
+           <?php
+        }
+    }
+    ?>
 				
 				
 				
-			
+			</div>
+			<h4>Vous êtes arrivé à la fin de notre bibliotèque musicale, veuillez attendre d'autre musique arriverons plutard.</h4>
 		</div>
         <a title="Acceuil" href="Index.php"><img class="logo" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/626071/line-logo.svg"></a>
         <a title="Acceuil" href="Index.php"><h1 class="logo2">Spotizer</h1> </a>
