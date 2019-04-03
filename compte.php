@@ -2,7 +2,7 @@
     <head>
 
             <title>Spotizer</title>
-			<link rel="stylesheet" type="text/css" href="Style.css" />
+			<link rel="stylesheet" type="text/css" href="style.css" />
 			<link rel="icon" href="https://s3-us-west-2.amazonaws.com/s.cdpn.io/626071/line-logo.svg" />
 
     </head>
@@ -19,25 +19,7 @@
 				</div>
 		<div class="content">
 				
-			<div class="case1">
-				<h3>Tendance</h3>
-				<table>
-				<tr>
-					<th>The Antidote - StupeFlip</th>
-				</tr>
-				<tr>
-					<td><audio controls="controls"><source src="Musique/02-The Antidote.mp3" type="audio/mp3" /></audio></td>
-				</tr>
-				<tr>
-						<th>Plus Rien M'étonne - Orelsan</th>
-					</tr>
-					<tr>
-						<td><audio controls="controls"><source src="Musique/03-orelsan-plus_rien_ne_metonne.mp3" type="audio/mp3" /></audio></td>
-					</tr>
-			</table>
-				
-			</div>
-			<h4>Voici la meilleur bibliothèque de musique au monde réalisé par les Meilleurs Developpeurs Du Monde !</h4>
+	
 		</div>
         <a title="Acceuil" href="Index.php"><img class="logo" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/626071/line-logo.svg"></a>
         <a title="Acceuil" href="Index.php"><h1 class="logo2">Spotizer</h1> </a>

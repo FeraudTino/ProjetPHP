@@ -24,15 +24,7 @@
 				
 			<div class="casebilio">
 				<h3>Tout nos Albums</h3>
-<!--
-				<table>
-				<tr>
-					<td>Album</td>
-					<td>Année de sortie</td>
-					<td>Nombre de Titre</td>
-				</tr>
 
-				-->
 					<?php
 						
 
@@ -47,10 +39,10 @@
 							?>
 							<a href="album.php?id=<?= $album->idAlb ?>"><?= $album->nomAlb ?></a><br/>
 							<?php
-						} //fin du foreach
+						} 
 					?>	
 				<?php
-					} //fin du if
+					} 
 					?>
 						
 						
