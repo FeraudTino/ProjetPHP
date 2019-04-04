@@ -9,7 +9,7 @@
 				include_once("function.php");
 							?>
             <title>Spotizer</title>
-			<link rel="stylesheet" type="text/css" href="CSS.css" />
+			<link rel="stylesheet" type="text/css" href="css.css" />
 			<link rel="icon" href="https://s3-us-west-2.amazonaws.com/s.cdpn.io/626071/line-logo.svg" />
 
     </head>
@@ -25,7 +25,8 @@
 			<a title="inscription" href="inscription.php"><li>Inscription & Connexion</li></a>
 		</ul><div class="titre1">
 				</div>
-		<div class="content">		
+		<div class="content">
+            <div class="caseMusique">		
                 <?php
                     $bdd = getDataBase();
                     if(isset($_GET['id'])){
@@ -42,8 +43,17 @@
 
 					                    ?>	
                                         
-				                    <h4><?php echo $donnee['nomTitre']; ?>
-					                    <?php echo $donnee['tempsTitre']; ?><audio controls="controls"><source src="<?php echo $donee['cheminMusique'] ?>" type="audio/mp3" /></h4>
+
+                                        <table>
+                                            <tr>
+                                                <th><?php echo $donnee['nomTitre']; ?></th>
+                                            </tr>
+                                            <tr>
+                                                <td><audio controls="controls"><source src="<?php echo $donnee['cheminMusique'] ?>" type="audio/mp3" /></td>
+                                            </tr>
+
+                                    </table>
+				                    
                                         
                                         
                                          <br>
@@ -86,7 +96,8 @@
         }
     }
     ?>
-		</div>
+        </div>
+</div>
         <a title="Acceuil" href="Index.php"><img class="logo" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/626071/line-logo.svg"></a>
         <a title="Acceuil" href="Index.php"><h1 class="logo2">Spotizer</h1> </a>
 		<img class="curve" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/626071/bottom-curve_copy.svg">

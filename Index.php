@@ -2,7 +2,7 @@
     <head>
 
             <title>Spotizer</title>
-			<link rel="stylesheet" type="text/css" href="CSS.css" />
+			<link rel="stylesheet" type="text/css" href="css.css" />
 			<link rel="icon" href="https://s3-us-west-2.amazonaws.com/s.cdpn.io/626071/line-logo.svg" />
 
     </head>
@@ -19,11 +19,11 @@
 				</div>
 		<div class="content">
 				
-			<div class="case1">
-			
-				
-			</div>
-			<h4>Voici la meilleur bibliothèque de musique au monde réalisé par les Meilleurs Developpeurs Du Monde !</h4>
+			<h6>Bienvenue sur Spotizer ! Notre site vous permet d'écouter la musique de votre choix en ligne. Veuillez vous connecter ou vous inscrire via l'onglet "Inscription & Connexion" afin d'accéder à la bibliothèque musicale.</h6>
+
+			<a class="button" href="inscription.php">Inscription</a>
+        	<a class="button" href="connexion.php">Connexion</a>
+
 		</div>
         <a title="Acceuil" href="Index.php"><img class="logo" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/626071/line-logo.svg"></a>
         <a title="Acceuil" href="Index.php"><h1 class="logo2">Spotizer</h1> </a>

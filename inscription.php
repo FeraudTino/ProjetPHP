@@ -5,7 +5,7 @@
     <head>
 
             <title>Spotizer</title>
-			<link rel="stylesheet" type="text/css" href="CSS.css" />
+			<link rel="stylesheet" type="text/css" href="css.css" />
 			<link rel="icon" href="https://s3-us-west-2.amazonaws.com/s.cdpn.io/626071/line-logo.svg" />
 
     </head>

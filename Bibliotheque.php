@@ -5,7 +5,7 @@
 				include_once("function.php");
 							?>
             <title>Spotizer</title>
-			<link rel="stylesheet" type="text/css" href="CSS.css" />
+			<link rel="stylesheet" type="text/css" href="css.css" />
 			<link rel="icon" href="https://s3-us-west-2.amazonaws.com/s.cdpn.io/626071/line-logo.svg" />
 
     </head>
@@ -24,7 +24,7 @@
 				
 			<div class="casebilio">
 				<h3>Tout nos Albums</h3>
-				<h5>PS : Veuillez vous connecter afin d'accéder au albums</h5>
+				<h5>Veuillez vous connecter afin d'accéder aux albums</h5>
 
 					<?php
 						
