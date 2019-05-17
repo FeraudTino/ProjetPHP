@@ -27,7 +27,7 @@
 		$bdd = getDataBase();
 		$bdd = new PDO('mysql:host=127.0.0.1;dbname=base', 'root', '');
 
-		session_start();
+		//session_start();
 
 
          if(isset($_POST['formconnexion'])) {
